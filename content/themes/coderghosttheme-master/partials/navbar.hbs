@@ -1,0 +1,56 @@
+
+{{#if @blog.logo}}
+    <div class="logo">
+<a class="blog-logo" href="{{@blog.url}}">
+        <img class="blog-logo-image" src="{{@blog.logo}}" alt="Blog Logo"/>
+</a>
+    </div>
+{{/if}}
+
+
+<h5>{{@blog.title}}</h5>
+<h6>{{@blog.description}}</h6>
+<hr>
+<ul class="list-unstyled menu">
+    <li>
+        <a href="https://github.com/kennethtruyers" target="_blank">
+         <i class="el el-github"></i> GitHub
+        </a>
+    </li>
+
+    {{#if @blog.facebook}}
+        <li>
+            <a href="{{facebook_url}}" target="_blank">
+                <i class="el el-facebook"></i> {{@blog.facebook}}
+            </a>
+        </li>
+    {{/if}}
+
+    {{#if @blog.twitter}}
+        <li>
+            <a href="{{twitter_url}}" target="_blank">
+                <i class="el el-twitter"></i> {{@blog.twitter}}
+            </a>
+        </li>
+    {{/if}}
+
+    <li>
+        <a href="http://stackoverflow.com/users/1816704/kenneth" target="_blank">
+            <i class="el el-stackoverflow"></i> Stackoverflow
+        </a>
+    </li>
+
+    <li>
+        <a href="http://www.linkedin.com/in/kennethtruyers" target="_blank">
+            <i class="el el-linkedin"></i> LinkedIn
+        </a>
+    </li>
+    <li>
+        <a href="https://plus.google.com/u/0/115588184864590887964" target="_blank">
+            <i class="el el-googleplus"></i> Google+
+        </a>
+    </li>
+</ul>
+
+
+

@@ -1,0 +1,22 @@
+{
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host"     : "127.0.0.1",
+            "user"     : "root",
+            "password" : "",
+            "database" : "ghost"
+        }
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": ["file", "stdout"]
+    },
+    "posts_per_page": 10
+}
